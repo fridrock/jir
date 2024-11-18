@@ -1,0 +1,6 @@
+[submodule "projects_service"]
+	path = projects_service
+	url = https://github.com/fridrock/projects_service.git
+[submodule "users"]
+	path = users 
+	url = https://github.com/fridrock/users.git

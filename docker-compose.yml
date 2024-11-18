@@ -5,13 +5,13 @@ services:
     image: postgres:latest
     container_name: postgres_container
     environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: mydatabase
+      POSTGRES_USER: root 
+      POSTGRES_PASSWORD: root 
     ports:
       - "5432:5432"
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/local-initdb.sql
+      # - db_data:/var/lib/postgresql/data
 
-volumes:
-  db_data:
+# volumes:
+#   db_data:
