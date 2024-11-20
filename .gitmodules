@@ -4,3 +4,6 @@
 [submodule "users"]
 	path = users 
 	url = https://github.com/fridrock/users.git
+[submodule "jir-ui"]
+	path = jir-ui
+	url = https://github.com/fridrock/jir-ui.git
